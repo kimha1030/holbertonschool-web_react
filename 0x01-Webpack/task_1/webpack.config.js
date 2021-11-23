@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
   entry: {
     main: './js/dashboard_main.js',
   },
@@ -9,4 +8,5 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     filename: 'bundle.js',
   },
+  mode: 'production'
 };
