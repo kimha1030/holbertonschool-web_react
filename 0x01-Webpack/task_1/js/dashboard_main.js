@@ -1,4 +1,4 @@
-import $ from "jquery";
+import $ from 'jquery';
 import _ from 'lodash';
 
 $('body').append('<p>Holberton Dashboard</p>');
