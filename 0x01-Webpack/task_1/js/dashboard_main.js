@@ -7,10 +7,11 @@ $('body').append('<button>Click here to get started</button>');
 $('body').append('<p id="count"></p>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
-let c = 0;
+let cont = 0;
+
 const updateCounter = () => {
-    c = c + 1;
-    $('#count').html(`${count} clicks on the button`);
-}
+  cont = cont + 1;
+  $('#count').html(`${cont} clicks on the button`);
+};
 
 $('button').on('click', _.debounce(updateCounter));
