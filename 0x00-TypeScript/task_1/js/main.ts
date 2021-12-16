@@ -41,3 +41,36 @@ interface printTeacherFunction {
 }
    
 console.log(printTeacher("John", "Doe"));
+
+class StudentClass implements interfaceClass {
+  firstName: String;
+  lastName: String;
+
+  constructor(firstName: String, lastName: String) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): String {
+    return 'Currently working';
+  }
+
+  displayName(): String {
+    return this.firstName;
+  }
+}
+
+interface constructorClass {
+  new (firstName: String, lastName: String): interfaceClass;
+}
+
+interface interfaceClass {
+  firstName: String;
+  lastName: String;
+  workOnHomework(): String;
+  displayName(): String;
+}
+
+const student1= new StudentClass("Kim", "HzA");
+console.log(student1.workOnHomework());
+console.log(student1.displayName());
