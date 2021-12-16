@@ -17,3 +17,27 @@ const teacher3: Teacher = {
   };
   
   console.log(teacher3);
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+
+// Example Holberton project
+const director1: Directors = {
+    firstName: 'John',
+    lastName: 'Doe',
+    location: 'London',
+    fullTimeEmployee: true,
+    numberOfReports: 17,
+  };
+  console.log(director1);
+
+function printTeacher(firstName: String, lastName: String): String {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+interface printTeacherFunction {
+  (firstName: String, lastName: String): String;
+}
+   
+console.log(printTeacher("John", "Doe"));
